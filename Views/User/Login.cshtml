@@ -1,0 +1,38 @@
+﻿@model CODECRAFT_FS_01.Models.LoginModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>Login</h2>
+
+<!-- ✅ Show error message here -->
+@if (ViewBag.Message != null)
+{
+    <div style="color:red; font-weight:bold; margin-bottom:10px;">
+        @ViewBag.Message
+    </div>
+}
+
+<form asp-action="Login" method="post">
+    <div>
+        <label>Username</label>
+        <input type="text" name="username" required class="form-control" />
+    </div>
+    <div>
+        <label>Password</label>
+        <input type="password" name="password" required class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
