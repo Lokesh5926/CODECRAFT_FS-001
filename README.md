@@ -11,4 +11,4 @@ This project is designed to demonstrate secure authentication, session managemen
 
 Technology Version Purpose
 
-ASP.NET Core MVC 7.0 / 6.0 Web framework Entity Framework Core Latest Database ORM SQL Server 2019+ Database Bootstrap 5 Styling & UI C# Latest Backend logic.
+ASP.NET Core MVC 8.0 / 6.0 Web framework Entity Framework Core Latest Database ORM SQL Server 2019+ Database Bootstrap 5 Styling & UI C# Latest Backend logic.
